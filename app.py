@@ -6,8 +6,8 @@ from nltk.stem.porter import PorterStemmer
 import string
 
 ps = PorterStemmer()
-tfidf = pickle.load(open('vectorizer.pkl','rb'))
-model = pickle.load(open('model.pkl','rb'))
+tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 def transform_text(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
